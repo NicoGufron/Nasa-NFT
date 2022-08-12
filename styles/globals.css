@@ -50,7 +50,7 @@ ul {
 }
 
 .first-section {
-  background: url("../public/images/bg.png");
+  background: url("images/bg.png");
   background-color: rgb(23, 186, 18);
   width: 100;
   position: relative;
