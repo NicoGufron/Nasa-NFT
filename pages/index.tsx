@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         <h1 className='main-title'>N.A.S.A</h1>
         <h4 className='sub-title'>Not A Shitty Alien</h4>
         <div className='title-buttons'>
-          <a target="_blank" href="https://google.com"><button>Reserve your alien</button></a>
+          <a target="_blank" rel='noreferrer' href="https://google.com"><button>Reserve your alien</button></a>
         </div>
       </div>
       <div className="marquee">
