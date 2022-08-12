@@ -314,6 +314,21 @@ ul {
 
   .first-section {
     height: 87vh;
+    background-size: 200%;
+  }
+
+  .first-section .main-title {
+    font-size: 70px;
+  }
+
+  .title-buttons button{
+    width: 220px;
+    height: 50px;
+    font-size: 21px;
+  }
+
+  .marquee-text {
+    font-size: 25px;
   }
 
   .nav-links {

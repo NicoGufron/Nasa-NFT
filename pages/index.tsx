@@ -47,8 +47,8 @@ const Home: NextPage = () => {
           <div className='about-section'>
             <p className='about-text'>
               We came from the Tadpole galaxy. Unlike other disgusting, big-headed aliens, we are NASA, Not A Shitty Alien. We are planning to invade Earth through one of your famous blockchain network, Ethereum!
-
-              To start the Earth invasion, we kinda need your funds. Hence, we will be selling our 3,456 selfie photos since we know feet pics are overrated.
+            </p><br></br>
+            <p className='about-text'>To start the Earth invasion, we kinda need your funds. Hence, we will be selling our 3,456 selfie photos since we know feet pics are overrated.
             </p>
             <div className='multiple-marquees'>
               <Marquee gradient={false} direction={"right"}>
