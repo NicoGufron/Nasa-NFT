@@ -312,6 +312,12 @@ ul {
   box-shadow: 0px 0px;
 }
 
+@media screen and (max-width: 768px) {
+  .first-section {
+    background-size: 100%;
+  }
+}
+
 @media screen and (max-width: 425px) {
 
   .first-section {
