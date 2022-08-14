@@ -2,23 +2,22 @@ import type { NextPage } from 'next'
 import Link from 'next/link';
 import { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
-import { Helmet } from 'react-helmet';
+import Head from "next/head";
 
 const Home: NextPage = () => {
-
   return (
     <>
-      <Helmet>
-        <meta charSet='utf-8'/>
+      <Head>
+        <meta charSet='utf-8' />
         <title>N.A.S.A | Not A Shitty Alien</title>
         <link rel="canonical" href="https://nasanft.space"></link>
-        <meta name='description' content="N.A.S.A is a showcase of NFTs that will go live on Ethereum!"/>
-        <meta property='og:title' content="N.A.S.A | Not A Shitty Alien"/>
-        <meta property='og:site_name' content="N.A.S.A | Not A Shitty Alien"/>
-        <meta property='twitter:site' content="@ETH_NASANFT"/>
-        <meta property='twitter:creator' content="@ETH_NASANFT"/>
-        <meta name="viewport" content="width=device-width"/>
-      </Helmet>
+        <meta name='description' content="N.A.S.A is a showcase of NFTs that will go live on Ethereum!" />
+        <meta property='og:title' content="N.A.S.A | Not A Shitty Alien" />
+        <meta property='og:site_name' content="N.A.S.A | Not A Shitty Alien" />
+        <meta property='twitter:site' content="@ETH_NASANFT" />
+        <meta property='twitter:creator' content="@ETH_NASANFT" />
+        <meta name="viewport" content="width=device-width" />
+      </Head>
       <div className='navbar'>
         <ul className='nav'>
           <li className='nav-links'><a href="#collection">Collection</a></li>
@@ -53,7 +52,7 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='second-section'>
-        <div className='about-container'  id="about">
+        <div className='about-container' id="about">
           <h1 className='main-title'>ABOUT</h1>
           <div className='about-section'>
             <p className='about-text'>
