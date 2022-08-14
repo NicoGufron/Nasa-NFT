@@ -1,8 +1,13 @@
 import type { NextPage } from 'next'
 import Link from 'next/link';
+import { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 
 const Home: NextPage = () => {
+
+  useEffect(() => {
+    document.title = "N.A.S.A | Not A Shitty Alien"
+  }, [])
 
   return (
     <>
@@ -29,11 +34,11 @@ const Home: NextPage = () => {
           <p className='marquee-text'>NFT Collection - Coming Soon &nbsp;</p>
         </Marquee>
       </div>
-      <div className='third-section'>
+      <div className='third-section' id="collection">
         <div className='third-section-image'>
           <img src="images/preview.jpg"></img>
         </div>
-        <div className='collection-section' id="collection">
+        <div className='collection-section'>
           <h1 className='main-title'>Collection</h1>
           <div className='content-section'>
             {/* <p>N.A.S.A is a showcase of NFTs with different types of aliens, including with different traits and attributes. Entirely hand drawn, N.A.S.A will showcase the character of an Alien, also not a shitty one. </p> */}
@@ -42,8 +47,8 @@ const Home: NextPage = () => {
         </div>
       </div>
       <div className='second-section'>
-        <div className='about-container'>
-          <h1 className='main-title' id="about">ABOUT</h1>
+        <div className='about-container'  id="about">
+          <h1 className='main-title'>ABOUT</h1>
           <div className='about-section'>
             <p className='about-text'>
               We came from the Tadpole galaxy. Unlike other disgusting, big-headed aliens, we are NASA, Not A Shitty Alien. We are planning to invade Earth through one of your famous blockchain network, Ethereum!
