@@ -1,9 +1,15 @@
-import {NextPage} from 'next';
+import { NextPage } from 'next';
 
-const MintPage: NextPage= () => {
+const MintPage: NextPage = () => {
     return (
         <>
-            <h1>Hello!</h1>
+            <div className='navbar'>
+                <ul className='nav'>
+                    <li className='nav-links'><a href="#collection">Collection</a></li>
+                    <li className='nav-links'><a href="#about">About</a></li>
+                    <li className='nav-links'><a href="#network">Network</a></li>
+                </ul>
+            </div>
         </>
     );
 }
