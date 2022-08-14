@@ -41,8 +41,7 @@ const Home: NextPage = () => {
         <div className='collection-section'>
           <h1 className='main-title'>Collection</h1>
           <div className='content-section'>
-            {/* <p>N.A.S.A is a showcase of NFTs with different types of aliens, including with different traits and attributes. Entirely hand drawn, N.A.S.A will showcase the character of an Alien, also not a shitty one. </p> */}
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ea enim maxime, quas nesciunt assumenda tempore beatae nisi fugiat necessitatibus ullam! Minima placeat accusamus totam consectetur labore illo autem illum? Beatae.</p>
+            <p>N.A.S.A is a showcase of NFTs with different types of aliens, including with different traits and attributes. Entirely hand drawn, N.A.S.A will showcase the characters of Aliens who crashed on earth and invading Earth. </p>
           </div>
         </div>
       </div>
