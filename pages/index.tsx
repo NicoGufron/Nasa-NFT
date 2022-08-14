@@ -2,16 +2,23 @@ import type { NextPage } from 'next'
 import Link from 'next/link';
 import { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
+import { Helmet } from 'react-helmet';
 
 const Home: NextPage = () => {
 
-  useEffect(() => {
-    document.title = "N.A.S.A | Not A Shitty Alien"
-  }, [])
-
   return (
     <>
-
+      <Helmet>
+        <meta charSet='utf-8'/>
+        <title>N.A.S.A | Not A Shitty Alien</title>
+        <link rel="canonical" href="https://nasanft.space"></link>
+        <meta name='description' content="N.A.S.A is a showcase of NFTs that will go live on Ethereum!"/>
+        <meta property='og:title' content="N.A.S.A | Not A Shitty Alien"/>
+        <meta property='og:site_name' content="N.A.S.A | Not A Shitty Alien"/>
+        <meta property='twitter:site' content="@ETH_NASANFT"/>
+        <meta property='twitter:creator' content="@ETH_NASANFT"/>
+        <meta name="viewport" content="width=device-width"/>
+      </Helmet>
       <div className='navbar'>
         <ul className='nav'>
           <li className='nav-links'><a href="#collection">Collection</a></li>
@@ -36,7 +43,7 @@ const Home: NextPage = () => {
       </div>
       <div className='third-section' id="collection">
         <div className='third-section-image'>
-          <img src="images/preview.jpg"></img>
+          <img className='banner-image' alt="Banner Image" src="images/preview-1.webp"></img>
         </div>
         <div className='collection-section'>
           <h1 className='main-title'>Collection</h1>
@@ -56,30 +63,30 @@ const Home: NextPage = () => {
             </p>
             <div className='multiple-marquees'>
               <Marquee gradient={false} direction={"right"}>
-                <img className='marquee-pictures' src="/images/1.png"></img>
-                <img className='marquee-pictures' src="/images/2.png"></img>
-                <img className='marquee-pictures' src="/images/3.png"></img>
-                <img className='marquee-pictures' src="/images/4.png"></img>
-                <img className='marquee-pictures' src="/images/5.png"></img>
-                <img className='marquee-pictures' src="/images/6.png"></img>
+                <img className='marquee-pictures' alt="Image 1" src="/images/1.png"></img>
+                <img className='marquee-pictures' alt="Image 2" src="/images/2.png"></img>
+                <img className='marquee-pictures' alt="Image 3" src="/images/3.png"></img>
+                <img className='marquee-pictures' alt="Image 4" src="/images/4.png"></img>
+                <img className='marquee-pictures' alt="Image 5" src="/images/5.png"></img>
+                <img className='marquee-pictures' alt="Image 6" src="/images/6.png"></img>
               </Marquee>
 
               <Marquee gradient={false} direction={"left"}>
-                <img className='marquee-pictures' src="/images/7.png"></img>
-                <img className='marquee-pictures' src="/images/8.png"></img>
-                <img className='marquee-pictures' src="/images/9.png"></img>
-                <img className='marquee-pictures' src="/images/10.png"></img>
-                <img className='marquee-pictures' src="/images/11.png"></img>
-                <img className='marquee-pictures' src="/images/12.png"></img>
+                <img className='marquee-pictures' alt="Image 7" src="/images/7.png"></img>
+                <img className='marquee-pictures' alt="Image 8" src="/images/8.png"></img>
+                <img className='marquee-pictures' alt="Image 9" src="/images/9.png"></img>
+                <img className='marquee-pictures' alt="Image 10" src="/images/10.png"></img>
+                <img className='marquee-pictures' alt="Image 11" src="/images/11.png"></img>
+                <img className='marquee-pictures' alt="Image 12" src="/images/12.png"></img>
               </Marquee>
 
               <Marquee gradient={false} direction={"right"}>
-                <img className='marquee-pictures' src="/images/13.png"></img>
-                <img className='marquee-pictures' src="/images/14.png"></img>
-                <img className='marquee-pictures' src="/images/15.png"></img>
-                <img className='marquee-pictures' src="/images/16.png"></img>
-                <img className='marquee-pictures' src="/images/17.png"></img>
-                <img className='marquee-pictures' src="/images/18.png"></img>
+                <img className='marquee-pictures' alt="Image 13" src="/images/13.png"></img>
+                <img className='marquee-pictures' alt="Image 14" src="/images/14.png"></img>
+                <img className='marquee-pictures' alt="Image 15" src="/images/15.png"></img>
+                <img className='marquee-pictures' alt="Image 16" src="/images/16.png"></img>
+                <img className='marquee-pictures' alt="Image 17" src="/images/17.png"></img>
+                <img className='marquee-pictures' alt="Image 18" src="/images/18.png"></img>
               </Marquee>
             </div>
           </div>
@@ -88,8 +95,8 @@ const Home: NextPage = () => {
 
       <div className='footer-section' id='network'>
         <div className='network-section'>
-          <a className='social-media-images' href="https://google.com"><img src='images/discord.png'></img></a>
-          <a className='social-media-images' href="https://google.com"><img src='images/twitter.png'></img></a>
+          <a className='social-media-images' href="https://google.com"><img alt="discord" src='images/discord.png'></img></a>
+          <a className='social-media-images' href="https://google.com"><img alt="twitter" src='images/twitter.png'></img></a>
           <h4 className='sub-title'>Our social media</h4>
         </div>
       </div>
