@@ -34,8 +34,8 @@ const Home: NextPage = () => {
         </div> */}
 
         <div className='fab-buttons'>
-          <a target="_blank" href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a>
-          <a target="_blank" href="https://twitter.com/ETH_NASANFT/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
+          <a target="_blank" rel='noreferrer' href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a>
+          <a target="_blank" rel='noreferrer' href="https://twitter.com/ETH_NASANFT/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
         </div>
       </div>
       <div className="marquee">
@@ -101,8 +101,8 @@ const Home: NextPage = () => {
       <div className='network-section' id="network">
         <h1>Join us in our social media!</h1>
         <div className='footer-buttons'>
-          <a target="_blank" href="https://twitter.com/ETH_NASANFT/"><button className='twitter-button'>Twitter</button></a>
-          <a target="_blank" href="https://discord.gg/ZQp5Tg4wjp"><button className='discord-button'>Discord</button></a>
+          <a rel='noreferrer' target="_blank" href="https://twitter.com/ETH_NASANFT/"><button className='twitter-button'>Twitter</button></a>
+          <a rel='noreferrer' target="_blank" href="https://discord.gg/ZQp5Tg4wjp"><button className='discord-button'>Discord</button></a>
         </div>
         <button className='toTop' onClick={toTheTop}>To The Top</button>
       </div>
