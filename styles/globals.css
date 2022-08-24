@@ -21,16 +21,37 @@ h1, h4 {
 
 ul {
   padding: 0;
+  margin-top: 20px;
 }
 
 .navbar {
   width: 100%;
-  height: auto;
+  height: 70px;
   position: fixed;
   z-index: 1000;
   background-color: rgba(218, 212, 212, 0.75);
-  backdrop-filter: blur(77px);
-  border-bottom: 2px solid black;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid black;
+}
+
+.fab-buttons {
+  position: absolute;
+  z-index: 100;
+  left: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  height: 150px;
+}
+
+.fab-buttons button {
+  margin-bottom: 20px;
+}
+
+.MuiFab-root {
+  background: rgba(218, 212, 212, 0.589);
+  border: 2px solid white;
+  backdrop-filter: blur(5px);
 }
 
 .nav {
@@ -49,13 +70,16 @@ ul {
   text-decoration: none;
 }
 
+
 .first-section {
   background: url("/images/bg.png");
+  background-size: cover;
+  /* background-size: 75%; */
   background-color: rgb(23, 186, 18);
   width: 100;
   position: relative;
   margin: 0 auto;
-  height: 89vh;
+  height: 100vh;
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -218,20 +242,86 @@ ul {
   border-radius: 20px;
 }
 
-.footer-section {
-  background-color: rgb(127, 235, 124);
-  width: 100%;
-}
-
 .network-section {
+  
   padding-top: 50px;
-  padding-bottom: 25px;
+  padding-bottom: 50px;
   text-align: center;
   justify-content: center;
+  height: 100%;
+  background-color: rgb(127, 235, 124);
+}
+
+.network-section h1 {
+  padding-bottom: 30px;
 }
 
 .network-section .sub-title {
   padding-top: 20px;
+}
+
+.footer-buttons {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 50%;
+}
+
+.twitter-button, .discord-button {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  width: 250px;
+  height: 80px;
+  border: 0;
+  border-radius: 25px;
+  font-size: 28px;
+}
+
+.twitter-button {
+  background-color: #1DA1F2;
+  color: #fff;
+  box-shadow: 8px 8px black;
+  transition: 0.5s;
+}
+
+.twitter-button:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px;
+}
+
+.discord-button {
+  background-color: #7289da;
+  color: #fff;
+  transition: 0.5s;
+  box-shadow: 8px 8px black;
+}
+
+.discord-button:hover {
+  box-shadow: 0px 0px;
+  transition: 0.5s;
+}
+
+.toTop {
+  font-family: "Bebas Neue", cursive;
+  letter-spacing: 3px;
+  font-size: 15px;
+  margin-top: 50px;
+  height: 90px;
+  width: 90px;
+  border-radius: 100px;
+  border: none;
+  box-shadow: 8px 8px #000;
+  transition: 0.5s;
+  background-color: rgb(34, 189, 250);
+  color: white;
+}
+
+.toTop:hover {
+  transition: 0.5s;
+  box-shadow: 0px 0px #000;
+  background-color: #ff0000;
+  color: black;
 }
 
 .social-media-images {
@@ -300,7 +390,7 @@ ul {
   transition: 0.5s;
   color: white;
   font-size: 21px;
-  border-radius: 16px;
+  border-radius: 15px;
   width: 250px;
   height: 60px;
   box-shadow: 8px 8px black;
@@ -316,17 +406,30 @@ ul {
   .first-section {
     background-size: 100%;
   }
+  .footer-buttons {
+    width: 100%;
+  }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 426px) {
 
   .first-section {
     height: 87vh;
     background-size: 200%;
   }
 
+  .fab-buttons {
+    display: none;
+  }
+
   .first-section .main-title {
     font-size: 70px;
+  }
+
+  .twitter-button, .discord-button {
+    width: 150px;
+    font-size: 24px;
+    height: 70px;
   }
 
   .title-buttons button{
@@ -384,5 +487,19 @@ ul {
   .social-media-images img {
     width: 15%;
   }
-  
+}
+
+@media screen and (max-width: 321px) {
+
+  .footer-buttons {
+    width: 100%;
+  }
+
+  .twitter-button .discord-button {
+    width: 100px;
+  }
+
+  .toTop {
+    font-size: 18px;
+  }
 }

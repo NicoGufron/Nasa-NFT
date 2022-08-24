@@ -1,10 +1,17 @@
 import type { NextPage } from 'next'
-import Link from 'next/link';
-import { useEffect } from 'react';
 import Marquee from "react-fast-marquee";
 import Head from "next/head";
+import Navbar from '../components/Navbar';
+import Fab from '@mui/material/Fab';
+import { SvgIcon } from '@mui/material';
+import TwitterIcon from '@mui/icons-material/Twitter';
 
 const Home: NextPage = () => {
+
+  function toTheTop() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <Head>
@@ -18,19 +25,17 @@ const Home: NextPage = () => {
         <meta property='twitter:creator' content="@ETH_NASANFT" />
         <meta name="viewport" content="width=device-width" />
       </Head>
-      <div className='navbar'>
-        <ul className='nav'>
-        <li className='nav-links'><a href="#">Home</a></li>
-          <li className='nav-links'><a href="#collection">Collection</a></li>
-          <li className='nav-links'><a href="#about">About</a></li>
-          <li className='nav-links'><a href="#network">Network</a></li>
-        </ul>
-      </div>
+      <Navbar></Navbar>
       <div className='first-section'>
         <h1 className='main-title'>N.A.S.A</h1>
         <h4 className='sub-title'>Not A Shitty Alien</h4>
-        <div className='title-buttons'>
+        {/* <div className='title-buttons'>
           <a target="_blank" rel='noreferrer' href="https://google.com"><button>Reserve your alien</button></a>
+        </div> */}
+
+        <div className='fab-buttons'>
+          <a target="_blank" href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a>
+          <a target="_blank" href="https://twitter.com/ETH_NASANFT/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
         </div>
       </div>
       <div className="marquee">
@@ -41,11 +46,11 @@ const Home: NextPage = () => {
           <p className='marquee-text'>NFT Collection - Coming Soon &nbsp;</p>
         </Marquee>
       </div>
-      <div className='third-section' id="collection">
+      <div className='third-section'>
         <div className='third-section-image'>
           <img className='banner-image' alt="Banner Image" src="images/preview-1.webp"></img>
         </div>
-        <div className='collection-section'>
+        <div className='collection-section' id="collection">
           <h1 className='main-title'>Collection</h1>
           <div className='content-section'>
             <p>N.A.S.A is a showcase of NFTs with different types of aliens, including with different traits and attributes. Entirely hand drawn, N.A.S.A will showcase the characters of Aliens who crashed on earth and invading Earth. </p>
@@ -93,12 +98,13 @@ const Home: NextPage = () => {
         </div>
       </div>
 
-      <div className='footer-section' id='network'>
-        <div className='network-section'>
-          <a className='social-media-images' href="https://google.com"><img alt="discord" src='images/discord.png'></img></a>
-          <a className='social-media-images' href="https://google.com"><img alt="twitter" src='images/twitter.png'></img></a>
-          <h4 className='sub-title'>Our social media</h4>
+      <div className='network-section' id="network">
+        <h1>Join us in our social media!</h1>
+        <div className='footer-buttons'>
+          <a target="_blank" href="https://twitter.com/ETH_NASANFT/"><button className='twitter-button'>Twitter</button></a>
+          <a target="_blank" href="https://discord.gg/ZQp5Tg4wjp"><button className='discord-button'>Discord</button></a>
         </div>
+        <button className='toTop' onClick={toTheTop}>To The Top</button>
       </div>
     </>
   );
