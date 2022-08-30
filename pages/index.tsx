@@ -15,6 +15,8 @@ const Home: NextPage = () => {
   }
 
   const [loading, setLoading] = useState(false);
+  const [width, setWidth] = useState(0);
+  const [progress, setProgress] = useState(0);
 
   var i = 0;
   var limit = 99;
@@ -32,8 +34,10 @@ const Home: NextPage = () => {
     setInterval(() => {
       if (i <= limit) {
         i += 1;
+        setProgress(i);
+        setWidth(i);
       } else {
-        setLoading(false);
+        // setLoading(false);
       }
     }, 100)
   }, []);
@@ -56,14 +60,13 @@ const Home: NextPage = () => {
         loading ?
           <div className='loading-screen'>
 
-            <img className='loading-screen-image' src="images/preview-2.webp"></img>
+            {/* <img className='loading-screen-image' src="images/preview-2.webp"></img> */}
 
             {/* For loading bar with numbers */}
-            {/* <div className='progress-bar' style={{ width: width * 3 }}>{progress}%</div> */}
+            <div className='progress-bar' style={{ width: width * 3 }}>{progress}%</div>
             <div className='titles'>
-              <h1>LOADING...</h1>
-              {/* <h1>N.A.S.A</h1>
-              <h2>Not A Shitty Alien</h2> */}
+              <h1>Booting up</h1>
+              <h1>N.A.S.A</h1>
             </div>
           </div>
           :
