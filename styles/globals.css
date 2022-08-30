@@ -105,13 +105,6 @@ ul {
   align-items: center;
 }
 
-@media screen and (max-width: 426px) {
-
-  .progress-bar {
-    max-width: 450px;
-  }
-}
-
 .first-section {
   background: url("/images/bg.png");
   background-size: cover;
@@ -506,6 +499,22 @@ ul {
   .first-section {
     height: 87vh;
     background-size: 200%;
+  }
+
+  .faq-section .main-title {
+    margin-top: 25px;
+  }
+
+  .progress-bar {
+    max-width: 450px;
+  }
+
+  .disclosure-section {
+    width: auto;
+  }
+
+  .disclosure-button {
+    width: 100%;
   }
 
   .fab-buttons {
