@@ -37,7 +37,7 @@ const Home: NextPage = () => {
         setProgress(i);
         setWidth(i);
       } else {
-        // setLoading(false);
+        setLoading(false);
       }
     }, 100)
   }, []);
