@@ -23,7 +23,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     // setLoading(true);
-    setLoading(false);
+    setLoading(true);
 
     // For loading screen with 8 seconds timer
     // setTimeout(() => {
