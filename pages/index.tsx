@@ -21,7 +21,7 @@ const Home: NextPage = () => {
 
   useEffect(() => {
     // setLoading(true);
-    setLoading(false);
+    setLoading(true);
 
     // For loading screen with 8 seconds timer
     // setTimeout(() => {
@@ -29,15 +29,13 @@ const Home: NextPage = () => {
     // }, 7000);
 
     // For loading progress bar with numbers
-    // setInterval(() => {
-    //   if (i <= limit) {
-    //     i += 1;
-    //   } else {
-    //     // setLoading(false);
-    //   }
-    //   setProgress(i);
-    //   setWidth(i);
-    // }, 100)
+    setInterval(() => {
+      if (i <= limit) {
+        i += 1;
+      } else {
+        setLoading(false);
+      }
+    }, 100)
   }, []);
 
   return (
