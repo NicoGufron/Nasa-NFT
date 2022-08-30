@@ -14,7 +14,7 @@ const FAQ: NextPage = () => {
             </Disclosure>
             <Disclosure>
                 <Disclosure.Button className='disclosure-button'>What is N.A.S.A?</Disclosure.Button>
-                <Disclosure.Panel className='disclosure-panel'>National Aeronautics and Space Administration for human language. But actually it's Not A Shitty Alien.</Disclosure.Panel>
+                <Disclosure.Panel className='disclosure-panel'>National Aeronautics and Space Administration for human language. But actually it is Not A Shitty Alien.</Disclosure.Panel>
             </Disclosure>
             <Disclosure>
                 <Disclosure.Button className='disclosure-button'>What network are you invading?</Disclosure.Button>
