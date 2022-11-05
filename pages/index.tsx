@@ -9,6 +9,8 @@ import { useState, useEffect } from 'react';
 import FAQ from '../components/FAQ';
 import LaunchIcon from '@mui/icons-material/Launch';
 import { Box, Container } from '@mui/system';
+import { FaCoins, FaRocket } from "react-icons/fa";
+import { GiLockedChest } from "react-icons/gi";
 
 const Home: NextPage = () => {
 
@@ -137,46 +139,64 @@ const Home: NextPage = () => {
               <Container>
                 <h1 className='main-title'> Features</h1>
                 <Box className='boxes' display={"flex"} justifyContent={"space-around"} mb={7}>
-                  <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
+                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
                     width: 300,
                     height: 300,
+                    marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",
                     backgroundColor: 'black',
                     borderRadius: '25px',
-                    color: 'white'
+                    color: 'white',
+                    '&:hover': {
+                      backgroundColor: '#01BAEF',
+                      color: 'white',
+                    }
                   }}>
 
                     <h1>$NASA</h1>
+                    <FaCoins size={"32"}></FaCoins>
                     <p>A small liquidity will be locked and will grow overtime. Contract will be renounced and tax will be 5/5</p>
 
                   </Box>
                   <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
                     width: 300,
                     height: 300,
+                    marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",
                     backgroundColor: 'black',
                     borderRadius: '25px',
-                    color: 'white'
+                    color: 'white',
+                    '&:hover': {
+                      backgroundColor: '#01BAEF',
+                      color: 'white',
+                    }
                   }}>
 
                     <h1>NFT Launch</h1>
+                    <FaRocket size={"32"}></FaRocket>
                     <p>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
 
                   </Box>
                   <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
                     width: 300,
                     height: 300,
+                    marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",
                     backgroundColor: 'black',
                     borderRadius: '25px',
-                    color: 'white'
+                    color: 'white',
+                    '&:hover': {
+                      backgroundColor: '#01BAEF',
+                      color: 'white',
+                    }
                   }}>
 
                     <h1>Mystery Box</h1>
-                    <p>Huh? What is that?</p>
+                    <GiLockedChest size={"32px"}></GiLockedChest>
+                    <p>Huh? What is that? Get a chance to get a mystery box? Why not!</p>
 
                   </Box>
                 </Box>
