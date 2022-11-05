@@ -159,7 +159,7 @@ const Home: NextPage = () => {
                     <p>A small liquidity will be locked and will grow overtime. Contract will be renounced and tax will be 5/5</p>
 
                   </Box>
-                  <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
+                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
                     width: 300,
                     height: 300,
                     marginBottom: "20px",
@@ -179,7 +179,7 @@ const Home: NextPage = () => {
                     <p>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
 
                   </Box>
-                  <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
+                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
                     width: 300,
                     height: 300,
                     marginBottom: "20px",
