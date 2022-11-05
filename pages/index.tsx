@@ -176,7 +176,7 @@ const Home: NextPage = () => {
                   }}>
 
                     <h1>Mystery Box</h1>
-                    <p>Huh? What's that?</p>
+                    <p>Huh? What is that?</p>
 
                   </Box>
                 </Box>
