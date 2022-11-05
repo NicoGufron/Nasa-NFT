@@ -4,7 +4,8 @@
   scroll-behavior: smooth;
 }
 
-html, body {
+html,
+body {
   letter-spacing: 2px;
   margin: 0;
   padding: 0;
@@ -15,7 +16,8 @@ body {
   background: #fff;
 }
 
-h1, h4 {
+h1,
+h4 {
   margin: 0;
 }
 
@@ -44,6 +46,21 @@ ul {
   height: 150px;
 }
 
+.drawer-menu {
+  display: none;
+}
+
+.drawer-nav-menu {
+  /* display: inline-flex; */
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  list-style-type: none;
+}
+
+
+
 .fab-buttons button {
   margin-bottom: 20px;
 }
@@ -68,6 +85,11 @@ ul {
 .nav-links a {
   color: black;
   text-decoration: none;
+}
+
+.nav-links.drawer {
+  padding-bottom: 30px;
+  padding-top: 30px
 }
 
 .loading-screen {
@@ -256,7 +278,7 @@ ul {
   text-align: center;
 }
 
-.third-section-image img{
+.third-section-image img {
   width: 80%;
   /* height: 80%; */
   background-position: center;
@@ -278,12 +300,14 @@ ul {
 }
 
 .network-section {
-  padding-top: 50px;
-  padding-bottom: 50px;
+  border-top: 1px solid black;
+  padding-top: 25px;
+  padding-bottom: 25px;
   text-align: center;
   justify-content: center;
-  height: 100%;
-  background-color: rgb(127, 235, 124);
+  height: 10%;
+  /* background: linear-gradient(90deg, #74F2CE 0%, #7CFFCB 100%); */
+  background-color: white;
 }
 
 .network-section h1 {
@@ -298,43 +322,31 @@ ul {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.network-links {
+  font-size: 15px;
+  text-decoration: none;
+  background: linear-gradient(90deg, #09C6F9 0%, #045DE9 100%);
+  border-radius: 15px;
+  color: white;
+  width: 15%;
+  padding: 15px;
+  display: flex;
   justify-content: space-evenly;
-  width: 50%;
-}
-
-.twitter-button, .discord-button {
-  font-family: "Bebas Neue", cursive;
-  letter-spacing: 3px;
-  width: 250px;
-  height: 80px;
-  border: 0;
-  border-radius: 25px;
-  font-size: 28px;
-}
-
-.twitter-button {
-  background-color: #1DA1F2;
-  color: #fff;
-  box-shadow: 8px 8px black;
+  align-items: center;
   transition: 0.5s;
+  box-shadow: 4px 4px black;
 }
 
-.twitter-button:hover {
+.network-links:hover {
   transition: 0.5s;
   box-shadow: 0px 0px;
 }
 
-.discord-button {
-  background-color: #7289da;
-  color: #fff;
-  transition: 0.5s;
-  box-shadow: 8px 8px black;
-}
-
-.discord-button:hover {
-  box-shadow: 0px 0px;
-  transition: 0.5s;
-}
 
 .toTop {
   font-family: "Bebas Neue", cursive;
@@ -367,7 +379,16 @@ ul {
   width: 100%;
   text-align: center;
   margin: 0 auto;
-  background:rgb(31, 182, 26);
+  background: rgb(31, 182, 26);
+}
+
+.offers-section {
+  text-align: center;
+}
+
+.offers-section h1 {
+  padding-top: 15px;
+  padding-bottom: 10px;
 }
 
 .fourth-section {
@@ -375,14 +396,14 @@ ul {
   margin: 0 auto;
   text-align: center;
   height: auto;
-  background: linear-gradient(to right, #9FE7FF 0%, #9FFFB5 100%);
+  background: linear-gradient(90deg, #5AFF15 0%, #7CFFCB 100%);
   padding: 2% 0 5% 0;
 }
 
 .faq-text {
   font-size: 21px;
 }
- 
+
 .disclosure-section {
   background-color: white;
   width: 500px;
@@ -439,7 +460,8 @@ ul {
   justify-content: space-evenly;
 }
 
-.first-box, .second-box {
+.first-box,
+.second-box {
   width: 250px;
   height: 120px;
   border-radius: 15px;
@@ -489,8 +511,32 @@ ul {
   .first-section {
     background-size: 100%;
   }
+
   .footer-buttons {
     width: 100%;
+  }
+  
+  .boxes {
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .collapse-menu {
+    display: none;
+  }
+
+  .drawer-menu {
+    padding-top: 12px;
+    width: 100%;
+    display: flex;
+    float: right;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .network-links {
+    width: 25%;
   }
 }
 
@@ -503,6 +549,10 @@ ul {
 
   .faq-section .main-title {
     margin-top: 25px;
+  }
+
+  .network-links {
+    width: 35%;
   }
 
   .progress-bar {
@@ -525,13 +575,14 @@ ul {
     font-size: 70px;
   }
 
-  .twitter-button, .discord-button {
+  .twitter-button,
+  .discord-button {
     width: 150px;
     font-size: 24px;
     height: 70px;
   }
 
-  .title-buttons button{
+  .title-buttons button {
     width: 220px;
     height: 50px;
     font-size: 21px;
@@ -585,6 +636,18 @@ ul {
 
   .social-media-images img {
     width: 15%;
+  }
+}
+
+@media screen and (max-width: 376px) {
+  .footer-buttons {
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .network-links {
+    margin: 10px;
+    width: 65%;
   }
 }
 

@@ -4,9 +4,11 @@ import Head from "next/head";
 import Navbar from '../components/Navbar';
 import Fab from '@mui/material/Fab';
 import TwitterIcon from '@mui/icons-material/Twitter';
+import Telegram from '@mui/icons-material/Telegram';
 import { useState, useEffect } from 'react';
-import { Disclosure } from '@headlessui/react';
 import FAQ from '../components/FAQ';
+import LaunchIcon from '@mui/icons-material/Launch';
+import { Box, Container } from '@mui/system';
 
 const Home: NextPage = () => {
 
@@ -22,13 +24,8 @@ const Home: NextPage = () => {
   var limit = 99;
 
   useEffect(() => {
-    // setLoading(true);
     setLoading(true);
-
-    // For loading screen with 8 seconds timer
-    // setTimeout(() => {
-    //   setLoading(false)
-    // }, 7000);
+    // setLoading(false);
 
     // For loading progress bar with numbers
     setInterval(() => {
@@ -59,14 +56,9 @@ const Home: NextPage = () => {
       {
         loading ?
           <div className='loading-screen'>
-
-            {/* <img className='loading-screen-image' src="images/preview-2.webp"></img> */}
-
-            {/* For loading bar with numbers */}
             <div className='progress-bar' style={{ width: width * 3 }}>{progress}%</div>
             <div className='titles'>
-              <h1>Booting up</h1>
-              <h1>N.A.S.A</h1>
+              <h1>Please wait, you shitty people!</h1>
             </div>
           </div>
           :
@@ -75,13 +67,11 @@ const Home: NextPage = () => {
             <div className='first-section'>
               <h1 className='main-title'>N.A.S.A</h1>
               <h4 className='sub-title'>Not A Shitty Alien</h4>
-              {/* <div className='title-buttons'>
-          <a target="_blank" rel='noreferrer' href="https://google.com"><button>Reserve your alien</button></a>
-        </div> */}
 
               <div className='fab-buttons'>
-                <a target="_blank" rel='noreferrer' href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a>
+                {/* <a target="_blank" rel='noreferrer' href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a> */}
                 <a target="_blank" rel='noreferrer' href="https://twitter.com/ETH_NASANFT/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
+                <a target="_blank" rel='noreferrer' href="https://t.me/nasaerc20/"><Fab><Telegram></Telegram></Fab></a>
               </div>
             </div>
             <div className="marquee">
@@ -110,8 +100,7 @@ const Home: NextPage = () => {
                   <p className='about-text'>
                     We came from the Tadpole galaxy. Unlike other disgusting, big-headed aliens, we are N.A.S.A, Not A Shitty Alien. We are planning to invade Earth through one of your famous blockchain network, Ethereum!
                   </p><br></br>
-                  <p className='about-text'>To start the Earth invasion, we kinda need your funds. Hence, we will be selling our 3,456 selfie photos since we know feet pics are overrated.
-                  </p>
+                  <p className='about-text'>We offer our mighty currency $NASA with liquidity locked and renounced contract, low tax and max transaction. No shitty whales controlling the chart. <br></br><br></br> We're not just ordinary aliens. We are N.A.S.A, Not A Shitty Aliens.</p>
                   <div className='multiple-marquees'>
                     <Marquee gradient={false} direction={"right"}>
                       <img className='marquee-pictures' alt="Image 1" src="/images/1.png"></img>
@@ -144,6 +133,57 @@ const Home: NextPage = () => {
               </div>
             </div>
 
+            <div className='offers-section'>
+              <Container>
+                <h1 className='main-title'> Features</h1>
+                <Box className='boxes' display={"flex"} justifyContent={"space-around"} mb={7}>
+                  <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
+                    width: 300,
+                    height: 300,
+                    paddingLeft: "10px",
+                    paddingRight: "10px",
+                    backgroundColor: 'black',
+                    borderRadius: '25px',
+                    color: 'white'
+                  }}>
+
+                    <h1>$NASA</h1>
+                    <p>A small liquidity will be locked and will grow overtime. Contract will be renounced and tax will be 5/5</p>
+
+                  </Box>
+                  <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
+                    width: 300,
+                    height: 300,
+                    paddingLeft: "10px",
+                    paddingRight: "10px",
+                    backgroundColor: 'black',
+                    borderRadius: '25px',
+                    color: 'white'
+                  }}>
+
+                    <h1>NFT Launch</h1>
+                    <p>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
+
+                  </Box>
+                  <Box display={"flex"} flexDirection={"column"} justifyContent={"space-around"} sx={{
+                    width: 300,
+                    height: 300,
+                    paddingLeft: "10px",
+                    paddingRight: "10px",
+                    backgroundColor: 'black',
+                    borderRadius: '25px',
+                    color: 'white'
+                  }}>
+
+                    <h1>Mystery Box</h1>
+                    <p>Huh? What's that?</p>
+
+                  </Box>
+                </Box>
+              </Container>
+
+            </div>
+
             <div className='fourth-section'>
               <div className='faq-section'>
                 <h1 className='main-title'>FAQ</h1>
@@ -154,11 +194,11 @@ const Home: NextPage = () => {
 
             <div className='network-section' id="network">
               <h1>Join us in our social media!</h1>
+              <h3>We will be waiting for you!</h3>
               <div className='footer-buttons'>
-                <a rel='noreferrer' target="_blank" href="https://twitter.com/ETH_NASANFT/"><button className='twitter-button'>Twitter</button></a>
-                <a rel='noreferrer' target="_blank" href="https://discord.gg/ZQp5Tg4wjp"><button className='discord-button'>Discord</button></a>
+                <a className='network-links' rel='noreferrer' target="_blank" href="https://twitter.com/ETH_NASANFT/"><TwitterIcon></TwitterIcon> Join Twitter <LaunchIcon></LaunchIcon></a>
+                <a className='network-links' rel='noreferrer' target="_blank" href="https://t.me/nasaerc20"><Telegram></Telegram> Join Telegram <LaunchIcon></LaunchIcon></a>
               </div>
-              <button className='toTop' onClick={toTheTop}>To The Top</button>
             </div>
           </>
       }
