@@ -33,7 +33,7 @@ const Navbar: NextPage = () => {
                 <ul className='nav'>
                     <li className='nav-links'><a href="#">Home</a></li>
                     <li className='nav-links'><a href="#collection">Collection</a></li>
-                    <li className='nav-links'><a href="https://tinyurl.com/whitepapernasa">Whitepaper<LaunchIcon></LaunchIcon></a></li>
+                    <li className='nav-links'><a rel='noreferrer' target="_blank" href="https://tinyurl.com/whitepapernasa">Whitepaper<LaunchIcon></LaunchIcon></a></li>
                     <li className='nav-links'><a href="#network">Network</a></li>
                     <li className='nav-links'><a href="#about">About</a></li>
                 </ul>

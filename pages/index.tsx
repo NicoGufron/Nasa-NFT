@@ -26,8 +26,8 @@ const Home: NextPage = () => {
   var limit = 99;
 
   useEffect(() => {
-    setLoading(true);
-    // setLoading(false);
+    // setLoading(true);
+    setLoading(false);
 
     // For loading progress bar with numbers
     setInterval(() => {
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
 
               <div className='fab-buttons'>
                 {/* <a target="_blank" rel='noreferrer' href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a> */}
-                <a target="_blank" rel='noreferrer' href="https://twitter.com/ETH_NASANFT/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
+                <a target="_blank" rel='noreferrer' href="https://twitter.com/nasaerc20/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
                 <a target="_blank" rel='noreferrer' href="https://t.me/nasaerc20/"><Fab><Telegram></Telegram></Fab></a>
               </div>
             </div>
@@ -179,7 +179,7 @@ const Home: NextPage = () => {
                     <p>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
 
                   </Box>
-                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
+                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"}  justifyContent={"space-around"} sx={{
                     width: 300,
                     height: 300,
                     marginBottom: "20px",
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
 
                     <h1>Mystery Box</h1>
                     <GiLockedChest size={"32px"}></GiLockedChest>
-                    <p>Huh? What is that? Get a chance to get a mystery box? Why not!</p>
+                    <p>Huh? What is that? Get a chance to get a mystery box? Interesting!</p>
 
                   </Box>
                 </Box>
@@ -216,7 +216,7 @@ const Home: NextPage = () => {
               <h1>Join us in our social media!</h1>
               <h3>We will be waiting for you!</h3>
               <div className='footer-buttons'>
-                <a className='network-links' rel='noreferrer' target="_blank" href="https://twitter.com/ETH_NASANFT/"><TwitterIcon></TwitterIcon> Join Twitter <LaunchIcon></LaunchIcon></a>
+                <a className='network-links' rel='noreferrer' target="_blank" href="https://twitter.com/nasaerc20/"><TwitterIcon></TwitterIcon> Join Twitter <LaunchIcon></LaunchIcon></a>
                 <a className='network-links' rel='noreferrer' target="_blank" href="https://t.me/nasaerc20"><Telegram></Telegram> Join Telegram <LaunchIcon></LaunchIcon></a>
               </div>
             </div>
