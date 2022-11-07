@@ -12,7 +12,7 @@ const FAQ: NextPage = () => {
             "Are there any taxes?",
             "What network are you invading?",
             "Will the contract be shared before started trading?",
-            "Do you have max transaction?",
+            "Do you have max transaction and max wallet?",
             "What is mystery box?"
         ],
         answers: [
@@ -21,7 +21,7 @@ const FAQ: NextPage = () => {
             "Yes, there will be taxes. 1% for Liquidity and 4% for our Military Funds.",
             "Ethereum will be nicer than BSC. The shitty people are strong here.",
             "No. Those shitty people will fire at us immediately.",
-            "Yes, we have! It's 0.05% of the total supply.",
+            "Yes, we have! They will be 0.05% of total supply, respectively.",
             "What mystery box?"
         ]
     }
