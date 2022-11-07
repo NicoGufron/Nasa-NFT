@@ -37,9 +37,7 @@ const Home: NextPage = () => {
         setProgress(i);
         setWidth(i);
       } else {
-        setTimeout(function (){
-          setLoading(false);
-        }, 1000);
+        setLoading(false);
 
       }
     }, 100)
@@ -61,7 +59,7 @@ const Home: NextPage = () => {
 
       {
         loading ?
-          <div className='loading-screen animate__animated animate__fadeOut animate__delay-5s' >
+          <div className='loading-screen' >
             <div className='progress-bar' style={{ width: width * 3 }}>{progress}%</div>
             <div className='titles'>
               <h1>Please wait, you shitty people!</h1>
