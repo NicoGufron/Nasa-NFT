@@ -49,11 +49,11 @@ const Home: NextPage = () => {
     <>
       <Head>
         <meta charSet='utf-8' />
-        <title>N.A.S.A | Not A Shitty Alien</title>
+        <title>N.A.S.A | Not Another Shitty Alien</title>
         <link rel="canonical" href="https://nasanft.space"></link>
         <meta name='description' content="N.A.S.A is a showcase of NFTs that will go live on Ethereum!" />
-        <meta property='og:title' content="N.A.S.A | Not A Shitty Alien" />
-        <meta property='og:site_name' content="N.A.S.A | Not A Shitty Alien" />
+        <meta property='og:title' content="N.A.S.A | Not Another Shitty Alien" />
+        <meta property='og:site_name' content="N.A.S.A | Not Another Shitty Alien" />
         <meta property='twitter:site' content="@ETH_NASANFT" />
         <meta property='twitter:creator' content="@ETH_NASANFT" />
         <meta name="viewport" content="width=device-width" />
@@ -72,7 +72,7 @@ const Home: NextPage = () => {
             <Navbar></Navbar>
             <div className='first-section'>
               <h1 className='main-title'>N.A.S.A</h1>
-              <h4 className='sub-title'>Not A Shitty Alien</h4>
+              <h4 className='sub-title'>Not Another Shitty Alien</h4>
 
               <div className='fab-buttons'>
                 {/* <a target="_blank" rel='noreferrer' href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a> */}
