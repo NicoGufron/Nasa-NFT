@@ -104,9 +104,11 @@ const Home: NextPage = () => {
                 <h1 className='main-title'>ABOUT</h1>
                 <div className='about-section'>
                   <p className='about-text'>
-                    We came from the Tadpole galaxy. Unlike other disgusting, big-headed aliens, we are N.A.S.A, Not A Shitty Alien. We are planning to invade Earth through one of your famous blockchain network, Ethereum!
+                    We come from the Tadpole galaxy, and unlike other disgusting, ugly, big headed aliens, we are N.A.S.A: Not Another Shitty Alien!
                   </p><br></br>
-                  <p className='about-text'>We offer our mighty currency <i><b>$NASA</b></i> with liquidity locked and renounced contract, low tax and max transaction. No shitty whales controlling the chart. <br></br><br></br> We are not just ordinary aliens. We are N.A.S.A, Not A Shitty Aliens.</p>
+                  <p className='about-text'>We are planning to invade earth through your worlds most famous blockchain, Ethereum. <br></br> Vitalik gave us a heads up. Don&apos;t you know? He&apos;s part of N.A.S.A too!</p>
+                  <br></br>
+                  <p className='about-text'>We are offering our interstellar currency <b>&apos;$NASA&apos;</b> with liquidity locked and renounced contract. Low tax & LOW max transaction. No shitty whales will control the chart.</p>
                   <div className='multiple-marquees'>
                     <Marquee gradient={false} direction={"right"}>
                       <img className='marquee-pictures' alt="Image 1" src="/images/1.png"></img>
