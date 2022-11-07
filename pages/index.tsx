@@ -95,7 +95,7 @@ const Home: NextPage = () => {
               <div className='collection-section' id="collection">
                 <h1 className='main-title'>Collection</h1>
                 <div className='content-section'>
-                  <p>N.A.S.A is a showcase of NFTs with different types of aliens, including with different traits and attributes. Entirely hand drawn, N.A.S.A will showcase the characters of Aliens who crashed on earth and invading Earth. </p>
+                  <p>N.A.S.A is a collection of NFT&apos;s showcasing a wide variety of (definitely not shitty) alien characters equipped with selection of different traits and attributes. Entirely hand drawn, these aliens are depicted invading and taking over Earth as we know it!</p>
                 </div>
               </div>
             </div>
