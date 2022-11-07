@@ -102,7 +102,7 @@ const Home: NextPage = () => {
                   <p className='about-text'>
                     We came from the Tadpole galaxy. Unlike other disgusting, big-headed aliens, we are N.A.S.A, Not A Shitty Alien. We are planning to invade Earth through one of your famous blockchain network, Ethereum!
                   </p><br></br>
-                  <p className='about-text'>We offer our mighty currency $NASA with liquidity locked and renounced contract, low tax and max transaction. No shitty whales controlling the chart. <br></br><br></br><br></br> We are not just ordinary aliens. We are N.A.S.A, Not A Shitty Aliens.</p>
+                  <p className='about-text'>We offer our mighty currency $NASA with liquidity locked and renounced contract, low tax and max transaction. No shitty whales controlling the chart. <br></br><br></br> We are not just ordinary aliens. We are N.A.S.A, Not A Shitty Aliens.</p>
                   <div className='multiple-marquees'>
                     <Marquee gradient={false} direction={"right"}>
                       <img className='marquee-pictures' alt="Image 1" src="/images/1.png"></img>
@@ -196,7 +196,7 @@ const Home: NextPage = () => {
 
                     <h1>Mystery Box</h1>
                     <GiLockedChest size={"32px"}></GiLockedChest>
-                    <p>Huh? What is that? Get a chance to get a mystery box? Interesting!</p>
+                    <p>-.-. --- -.. . -. .- -- . --. .- -. -.-- -- . -.. .-- --- --- -. -- .. ... ... .. --- -. .-.-.- .--. .-. . .--. .- .-. . - --- .-. . .- -.-. .... .---- -- .. .-.. .-.. .. --- -. -- .- .-. -.- . - -.-. .- .--.</p>
 
                   </Box>
                 </Box>
