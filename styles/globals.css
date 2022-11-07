@@ -60,7 +60,7 @@ ul {
 }
 
 .animate__animated {
-  --animation-duration: 5s;
+  --animate-delay: 2s;
 }
 
 .fab-buttons button {
