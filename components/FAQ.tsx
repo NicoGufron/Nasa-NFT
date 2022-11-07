@@ -21,7 +21,7 @@ const FAQ: NextPage = () => {
             "Yes, there will be taxes. 1% for Liquidity and 4% for our Military Funds.",
             "Ethereum will be nicer than BSC. The shitty people are strong here.",
             "No. Those shitty people will fire at us immediately.",
-            "Yes, we have! They will be 0.05% of total supply, respectively.",
+            "Yes, we have! They will be 0.05 of total supply, respectively.",
             "What mystery box?"
         ]
     }
