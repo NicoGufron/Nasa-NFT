@@ -64,7 +64,7 @@ const Home: NextPage = () => {
           <div className='loading-screen animate__animated animate__fadeOut animate__delay-5s' >
             <div className='progress-bar' style={{ width: width * 3 }}>{progress}%</div>
             <div className='titles'>
-              <h1>Please wait, you shitty people!</h1>
+              <h1>Please wait, Shitty Humans!</h1>
             </div>
           </div>
           :
