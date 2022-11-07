@@ -11,6 +11,7 @@ import LaunchIcon from '@mui/icons-material/Launch';
 import { Box, Container } from '@mui/system';
 import { FaCoins, FaRocket } from "react-icons/fa";
 import { GiLockedChest } from "react-icons/gi";
+import 'animate.css';
 
 const Home: NextPage = () => {
 
@@ -36,7 +37,10 @@ const Home: NextPage = () => {
         setProgress(i);
         setWidth(i);
       } else {
-        setLoading(false);
+        setTimeout(function (){
+          setLoading(false);
+        }, 1000);
+
       }
     }, 100)
   }, []);
@@ -57,7 +61,7 @@ const Home: NextPage = () => {
 
       {
         loading ?
-          <div className='loading-screen'>
+          <div className='loading-screen animate__animated animate__fadeOut animate__delay-5s' >
             <div className='progress-bar' style={{ width: width * 3 }}>{progress}%</div>
             <div className='titles'>
               <h1>Please wait, you shitty people!</h1>
@@ -175,7 +179,7 @@ const Home: NextPage = () => {
                     <p className='body-box text'>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
 
                   </Box>
-                  <Box className='box' display={"flex"} flexDirection={"column"} alignItems={"center"}  justifyContent={"space-around"} sx={{
+                  <Box className='box' display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
                     marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",

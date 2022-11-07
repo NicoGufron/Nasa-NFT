@@ -59,7 +59,9 @@ ul {
   list-style-type: none;
 }
 
-
+.animate__animated {
+  --animation-duration: 5s;
+}
 
 .fab-buttons button {
   margin-bottom: 20px;
