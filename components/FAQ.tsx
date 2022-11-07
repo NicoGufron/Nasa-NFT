@@ -12,7 +12,7 @@ const FAQ: NextPage = () => {
             "Are there any taxes?",
             "What network are you invading?",
             "Will the contract be shared before started trading?",
-            "Are there any NFTs will be launched?",
+            "Do you have max transaction?",
             "What is mystery box?"
         ],
         answers: [
@@ -21,7 +21,7 @@ const FAQ: NextPage = () => {
             "Yes, there will be taxes. 1% for Liquidity and 4% for our Military Funds.",
             "Ethereum will be nicer than BSC. The shitty people are strong here.",
             "No. Those shitty people will fire at us immediately.",
-            "Yes! We have NFTs that will be launched soon enough when it is ready!",
+            "Yes, we have! It's 0.05% of the total supply.",
             "What mystery box?"
         ]
     }

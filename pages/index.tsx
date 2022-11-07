@@ -26,8 +26,8 @@ const Home: NextPage = () => {
   var limit = 99;
 
   useEffect(() => {
-    // setLoading(true);
-    setLoading(false);
+    setLoading(true);
+    // setLoading(false);
 
     // For loading progress bar with numbers
     setInterval(() => {
@@ -139,9 +139,7 @@ const Home: NextPage = () => {
               <Container>
                 <h1 className='main-title'> Features</h1>
                 <Box className='boxes' display={"flex"} justifyContent={"space-around"} mb={7}>
-                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
-                    width: 300,
-                    height: 300,
+                  <Box className='box' display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
                     marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",
@@ -156,12 +154,10 @@ const Home: NextPage = () => {
 
                     <h1>$NASA</h1>
                     <FaCoins size={"32"}></FaCoins>
-                    <p>A small liquidity will be locked and will grow overtime. Contract will be renounced and tax will be 5/5</p>
+                    <p className='body-box text'>A small liquidity will be locked and will grow overtime. Contract will be renounced and tax will be 5/5</p>
 
                   </Box>
-                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
-                    width: 300,
-                    height: 300,
+                  <Box className='box' display={"flex"} flexDirection={"column"} alignItems={"center"} justifyContent={"space-around"} sx={{
                     marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",
@@ -176,12 +172,10 @@ const Home: NextPage = () => {
 
                     <h1>NFT Launch</h1>
                     <FaRocket size={"32"}></FaRocket>
-                    <p>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
+                    <p className='body-box text'>There are only 3.456 collections of N.A.S.A selfies. Only a few percentage of $NASA holders will have a free mint.</p>
 
                   </Box>
-                  <Box display={"flex"} flexDirection={"column"} alignItems={"center"}  justifyContent={"space-around"} sx={{
-                    width: 300,
-                    height: 300,
+                  <Box className='box' display={"flex"} flexDirection={"column"} alignItems={"center"}  justifyContent={"space-around"} sx={{
                     marginBottom: "20px",
                     paddingLeft: "10px",
                     paddingRight: "10px",
@@ -196,7 +190,7 @@ const Home: NextPage = () => {
 
                     <h1>Mystery Box</h1>
                     <GiLockedChest size={"32px"}></GiLockedChest>
-                    <p>-.-. --- -.. . -. .- -- . --. .- -. -.-- -- . -.. .-- --- --- -. -- .. ... ... .. --- -. .-.-.- .--. .-. . .--. .- .-. . - --- .-. . .- -.-. .... .---- -- .. .-.. .-.. .. --- -. -- .- .-. -.- . - -.-. .- .--.</p>
+                    <p className='body-box text'>-.-. --- -.. . -. .- -- . --. .- -. -.-- -- . -.. .-- --- --- -. -- .. ... ... .. --- -. .-.-.- .--. .-. . .--. .- .-. . - --- .-. . .- -.-. .... .---- -- .. .-.. .-.. .. --- -. -- .- .-. -.- . - -.-. .- .--.</p>
 
                   </Box>
                 </Box>
