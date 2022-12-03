@@ -73,11 +73,17 @@ const Home: NextPage = () => {
             <div className='first-section'>
               <h1 className='main-title'>N.A.S.A</h1>
               <h4 className='sub-title'>Not Another Shitty Alien</h4>
+              <div className='hero-buttons'>
+                <button className='hero-button telegram'>Join Telegram</button>
+                <button className='hero-button ca'>Contract Address</button>
+                <button className='hero-button buy'>Buy Token</button>
+                <button className='hero-button chart'>Chart</button>
+              </div>
 
               <div className='fab-buttons'>
                 {/* <a target="_blank" rel='noreferrer' href="https://discord.gg/ZQp5Tg4wjp"><Fab><img src="images/discord.svg"></img></Fab></a> */}
-                <a target="_blank" rel='noreferrer' href="https://twitter.com/nasaerc20/"><Fab><TwitterIcon></TwitterIcon></Fab></a>
-                <a target="_blank" rel='noreferrer' href="https://t.me/nasaerc20/"><Fab><Telegram></Telegram></Fab></a>
+                <a target="_blank" rel='noreferrer' href=""><Fab><TwitterIcon></TwitterIcon></Fab></a>
+                <a target="_blank" rel='noreferrer' href=""><Fab><Telegram></Telegram></Fab></a>
               </div>
             </div>
             <div className="marquee">
@@ -216,8 +222,8 @@ const Home: NextPage = () => {
               <h1>Join us in our social media!</h1>
               <h3>We will be waiting for you!</h3>
               <div className='footer-buttons'>
-                <a className='network-links' rel='noreferrer' target="_blank" href="https://twitter.com/nasaerc20/"><TwitterIcon></TwitterIcon> Join Twitter <LaunchIcon></LaunchIcon></a>
-                <a className='network-links' rel='noreferrer' target="_blank" href="https://t.me/nasaerc20"><Telegram></Telegram> Join Telegram <LaunchIcon></LaunchIcon></a>
+                <a className='network-links' rel='noreferrer' target="_blank" href=""><TwitterIcon></TwitterIcon> Join Twitter <LaunchIcon></LaunchIcon></a>
+                <a className='network-links' rel='noreferrer' target="_blank" href=""><Telegram></Telegram> Join Telegram <LaunchIcon></LaunchIcon></a>
               </div>
             </div>
           </>

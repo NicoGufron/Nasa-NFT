@@ -34,12 +34,12 @@ const MintPage: NextPage = () => {
 
         setButtonText("Pending...");
 
-        if (chainId != 97) { //jangan lupa diganti jadi chainId != 1
+        if (chainId != 1) { //jangan lupa diganti jadi chainId != 1
             // alert('Please use the Ethereum network!');
             setAlertText("Please use the Ethereum network!");
             setButtonText("Connect Your Wallet");
             setDisplayAlert(true);
-        } else if (chainId === 97) { //jangan lupa diganti jadi chainId == 1
+        } else if (chainId === 1) { //jangan lupa diganti jadi chainId == 1
             const accounts = await provider.send("eth_requestAccounts", []);
             setDisplayAlert(false);
             if (accounts.length > 0) {
